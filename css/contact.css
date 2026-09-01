@@ -1,0 +1,35 @@
+.contact-section {
+  text-align: center;
+}
+
+.contact-text {
+  color: var(--text-muted);
+  max-width: 500px;
+  margin: 0 auto 12px;
+}
+
+.contact-location {
+  color: var(--text-muted);
+  font-family: monospace;
+  font-size: 0.85rem;
+  margin-bottom: 32px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.social-links a {
+  display: inline-block;
+  padding: 10px 4px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent);
+}

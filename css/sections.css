@@ -1,0 +1,36 @@
+.section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 100px 24px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.section-heading.centered {
+  justify-content: center;
+}
+
+.section-number {
+  color: var(--accent);
+  font-family: monospace;
+  font-size: 1.1rem;
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+  color: var(--text-main);
+  white-space: nowrap;
+}
+
+.section-heading::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: rgba(136, 146, 176, 0.3);
+  margin-left: 16px;
+}
