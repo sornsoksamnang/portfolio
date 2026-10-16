@@ -21,15 +21,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #0c1220;
-    --surface: #131b2e;
+    --paper: #0f1d33;
+    --surface: #162844;
     --ink: #e8ecf3;
-    --ink-soft: #a3adc0;
-    --rule: #26304a;
+    --ink-soft: #a9b5ca;
+    --rule: #263b5c;
     --blue: #7db3e6;
     --blue-deep: #0f5a96;
-    --blue-wash: #16243d;
-    --on-blue: #0c1220;
+    --blue-wash: #1c3354;
+    --on-blue: #0f1d33;
+    --glow: radial-gradient(1100px 620px at 75% -8%, rgba(31, 110, 180, 0.38), transparent 70%);
   }
 }
 
@@ -44,7 +45,7 @@ html {
 }
 
 body {
-  background: var(--paper);
+  background: var(--glow, none) no-repeat, var(--paper);
   color: var(--ink);
   font-family: var(--body);
   font-size: 1.0625rem;
@@ -310,7 +311,7 @@ h1, h2, h3 {
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .stack li {
-    background: color-mix(in srgb, #1d4f80 calc(100% - var(--i) * 18%), #12263f);
+    background: color-mix(in srgb, #1f5c96 calc(100% - var(--i) * 22%), #183c66);
   }
 }
 
@@ -501,7 +502,7 @@ h1, h2, h3 {
   padding-block: clamp(64px, 10vw, 120px);
 }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .contact { background: #0f2c4d; }
+  :root:not([data-theme="light"]) .contact { background: #123a63; }
 }
 
 .contact h2 {
