@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sorn SokSamnang, Full Stack Developer</title>
+  <meta name="description" content="Sorn SokSamnang is a full stack developer in Phnom Penh building React front ends, Spring Boot and Laravel back ends, Qt/QML desktop apps and Rust tools.">
+  <meta name="author" content="Sorn SokSamnang">
+  <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0c1220" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://portfolio-three-orcin-95.vercel.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://portfolio-three-orcin-95.vercel.app/">
+  <meta property="og:title" content="Sorn SokSamnang, Full Stack Developer">
+  <meta property="og:description" content="Full stack developer in Phnom Penh: React, Spring Boot, Laravel, Qt/QML and Rust.">
+  <meta property="og:image" content="https://portfolio-three-orcin-95.vercel.app/image/profile.jpg">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="image/svg+xml" href="/image/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" class="logo" aria-label="Sorn SokSamnang, back to top">SS</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero wrap" id="top">
+      <div class="hero-copy">
+        <p class="hero-status"><span class="dot" aria-hidden="true"></span>Open to full-time and internship roles</p>
+        <h1 class="hero-name">Sorn SokSamnang</h1>
+        <p class="hero-role">Full stack developer in Phnom Penh, Cambodia</p>
+        <p class="hero-lede">
+          I build complete products, from the interface people click to the
+          API and database behind it, plus the occasional desktop app or
+          Rust tool when the web isn't the right fit.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-solid">See my projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <figure class="hero-photo">
+        <img src="/image/profile.jpg" width="700" height="623" alt="Portrait of Sorn SokSamnang in a navy suit">
+      </figure>
+
+      <ol class="stack" aria-label="What I work on, from front end to systems">
+        <li style="--i:0"><span class="stack-layer">Interface</span><span class="stack-tools">React, TypeScript, Tailwind</span></li>
+        <li style="--i:1"><span class="stack-layer">API</span><span class="stack-tools">Spring Boot, Express, Laravel</span></li>
+        <li style="--i:2"><span class="stack-layer">Data</span><span class="stack-tools">PostgreSQL, MySQL, SQLite</span></li>
+        <li style="--i:3"><span class="stack-layer">Desktop &amp; systems</span><span class="stack-tools">Qt/QML, Rust, Linux</span></li>
+      </ol>
+    </section>
+
+    <section class="section wrap" id="about" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
+      <div class="about-grid">
+        <div class="prose">
+          <p>
+            I'm a full stack developer finishing a Bachelor of Information
+            Technology at Asia Euro University. I like owning a feature end to
+            end: designing the database tables, writing the API, and building
+            the screens that use it.
+          </p>
+          <p>
+            Most of my work is in React and TypeScript on the front end and Java
+            with Spring Boot on the back end. I also contribute to open source
+            around Ubuntu Touch and Lomiri, which is where I picked up Qt/QML
+            and Rust.
+          </p>
+        </div>
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>Phnom Penh, Cambodia</dd></div>
+          <div><dt>Currently</dt><dd>Developer at Monflo</dd></div>
+          <div><dt>Studying</dt><dd>BSc IT, Asia Euro University</dd></div>
+          <div><dt>Languages</dt><dd>Khmer, English</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section wrap" id="projects" aria-labelledby="projects-h">
+      <h2 id="projects-h">Projects</h2>
+
+      <ul class="projects">
+        <li class="project">
+          <div class="project-head">
+            <h3><a href="https://github.com/sornsoksamnang/pos_system" target="_blank" rel="noopener noreferrer">Point-of-sale system</a></h3>
+            <p class="project-kind">Full stack web app</p>
+          </div>
+          <p class="project-desc">
+            A POS for a retail shop with a React and Ant Design dashboard on top
+            of an Express and MySQL API. Staff sign in with JWT, ring up sales,
+            print receipts as PDF, export reports to Excel and track revenue on
+            charts.
+          </p>
+          <ul class="tags"><li>React</li><li>Ant Design</li><li>Zustand</li><li>Node.js</li><li>Express</li><li>MySQL</li><li>JWT</li></ul>
+          <a class="project-link" href="https://github.com/sornsoksamnang/pos_system" target="_blank" rel="noopener noreferrer">Source on GitHub</a>
+        </li>
+
+        <li class="project">
+          <div class="project-head">
+            <h3><a href="https://github.com/sornsoksamnang/spring_pos" target="_blank" rel="noopener noreferrer">Phone shop POS API</a></h3>
+            <p class="project-kind">Back end</p>
+          </div>
+          <p class="project-desc">
+            A REST API for a phone shop that manages brands, models and stock.
+            Built with Spring Boot in a controller, service and repository
+            structure on PostgreSQL, and packaged with Docker.
+          </p>
+          <ul class="tags"><li>Java</li><li>Spring Boot</li><li>Spring Data JPA</li><li>PostgreSQL</li><li>Docker</li></ul>
+          <a class="project-link" href="https://github.com/sornsoksamnang/spring_pos" target="_blank" rel="noopener noreferrer">Source on GitHub</a>
+        </li>
+
+        <li class="project">
+          <div class="project-head">
+            <h3><a href="https://github.com/sornsoksamnang/ecommerce" target="_blank" rel="noopener noreferrer">CEC Electronic store</a></h3>
+            <p class="project-kind">E-commerce site</p>
+          </div>
+          <p class="project-desc">
+            An online store for a computer shop, with a product catalog, cart,
+            checkout and customer accounts, plus an admin panel for suppliers,
+            stock, deliveries and orders.
+          </p>
+          <ul class="tags"><li>Laravel</li><li>PHP</li><li>Blade</li><li>MySQL</li></ul>
+          <a class="project-link" href="https://github.com/sornsoksamnang/ecommerce" target="_blank" rel="noopener noreferrer">Source on GitHub</a>
+        </li>
+
+        <li class="project">
+          <div class="project-head">
+            <h3><a href="https://gitlab.com/opensource2905228/rust-for-lomiri-contributors" target="_blank" rel="noopener noreferrer">Rust for Lomiri contributors</a></h3>
+            <p class="project-kind">Open source course</p>
+          </div>
+          <p class="project-desc">
+            A nine-module course that takes developers from Rust basics to their
+            first merge request on Ubuntu Touch and Lomiri, covering QML/Qt
+            bindings and D-Bus services.
+          </p>
+          <ul class="tags"><li>Rust</li><li>QML</li><li>Qt</li><li>D-Bus</li></ul>
+          <a class="project-link" href="https://gitlab.com/opensource2905228/rust-for-lomiri-contributors" target="_blank" rel="noopener noreferrer">Source on GitLab</a>
+        </li>
+      </ul>
+
+      <h3 class="subhead">Smaller builds</h3>
+      <ul class="minor-projects">
+        <li>
+          <p class="minor-title">Desktop notes app</p>
+          <p>Cross-platform notes in Qt Quick and QML, using a model-view setup with local SQLite storage.</p>
+        </li>
+        <li>
+          <p class="minor-title">File sync CLI</p>
+          <p>A multithreaded Rust command-line tool that keeps folders in sync using async I/O.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section wrap" id="experience" aria-labelledby="experience-h">
+      <h2 id="experience-h">Experience</h2>
+      <ol class="timeline">
+        <li>
+          <p class="when">Jun 2024 – present</p>
+          <div>
+            <h3>Open source and full stack developer</h3>
+            <p class="where">Monflo, full-time</p>
+            <ul class="bullets">
+              <li>Contribute to open source projects, including the Ubuntu Touch and Lomiri ecosystem.</li>
+              <li>Build and maintain features across web and desktop software.</li>
+              <li>Work with the development team through code review and merge requests on GitHub and GitLab.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section wrap" id="skills" aria-labelledby="skills-h">
+      <h2 id="skills-h">Skills</h2>
+      <dl class="skills">
+        <div><dt>Front end</dt><dd>React, TypeScript, JavaScript (ES6+), HTML and CSS, Tailwind CSS, Material UI, Ant Design, Bootstrap, React Router, Redux Toolkit, Zustand, responsive design</dd></div>
+        <div><dt>Back end</dt><dd>Java, Spring Boot, Spring MVC, Spring Data JPA, Hibernate, Spring Security, Node.js, Express, Laravel, PHP</dd></div>
+        <div><dt>APIs</dt><dd>REST API design, JWT and OAuth2 authentication, WebSocket, OpenAPI/Swagger, file uploads, third-party integrations</dd></div>
+        <div><dt>Databases</dt><dd>PostgreSQL, MySQL, SQLite, schema design and ER modeling, query optimization</dd></div>
+        <div><dt>Desktop</dt><dd>Qt, Qt Quick, QML, Qt Quick Controls, model-view architecture, signals and slots, CMake</dd></div>
+        <div><dt>Systems</dt><dd>Rust, Cargo, async and multithreading, traits and generics, FFI, Rust with Qt/QML</dd></div>
+        <div><dt>Linux and tooling</dt><dd>Debian, Ubuntu, Ubuntu Touch, Lomiri, shell scripting, Git, GitHub, GitLab, Docker, Maven, Gradle, npm, Postman, DBeaver, IntelliJ IDEA, VS Code, Qt Creator</dd></div>
+      </dl>
+    </section>
+
+    <section class="section wrap" id="education" aria-labelledby="education-h">
+      <h2 id="education-h">Education</h2>
+      <ol class="timeline">
+        <li>
+          <p class="when">2021 – 2026</p>
+          <div><h3>Bachelor of Information Technology</h3><p class="where">Asia Euro University</p></div>
+        </li>
+        <li>
+          <p class="when">2023 – 2025</p>
+          <div><h3>Bachelor of English</h3><p class="where">Asia Euro University</p></div>
+        </li>
+        <li>
+          <p class="when">2018 – 2021</p>
+          <div><h3>High school diploma (BacII)</h3><p class="where">Sok An Soben High School</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-h">
+      <div class="wrap contact-inner">
+        <h2 id="contact-h">Let's work together</h2>
+        <p>
+          I'm looking for a full-time or internship role on a product team.
+          The fastest way to reach me is email or Telegram.
+        </p>
+        <div class="contact-actions">
+          <a href="mailto:sornsoksamnang404@gmail.com" class="btn btn-light">sornsoksamnang404@gmail.com</a>
+          <a href="https://t.me/emm_nang" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">Message on Telegram</a>
+        </div>
+        <ul class="contact-links">
+          <li><a href="https://github.com/sornsoksamnang" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://gitlab.com/opensource2905228" target="_blank" rel="noopener noreferrer">GitLab</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Sorn SokSamnang</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="/js/nav.js"></script>
+</body>
+</html>
